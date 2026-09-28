@@ -2,4 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: pink;
+}
+h1, h2, h3, h4, h5, h5, h6{
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #dfdfdf;
+    border: 5px solid aquamarine;
+    max-width: fit-content;
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
