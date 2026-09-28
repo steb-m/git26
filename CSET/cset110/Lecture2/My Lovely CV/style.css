@@ -1,0 +1,108 @@
+
+body {
+    margin: 0;
+    background: #eef2f7;
+    color: #1f2937;
+    font: 15px/1.6 Arial, sans-serif;
+}
+.resume {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 48px 56px;
+    background: white;
+    box-shadow: 0 8px 30px #1e293b18;
+    animation: resume-in 700ms ease-out both;
+}
+header {
+    border-bottom: 3px solid #2563eb;
+    padding-bottom: 22px;
+    animation: header-in 700ms 120ms ease-out both;
+}
+h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+.role {
+    margin: 4px 0 12px;
+    color: #2563eb;
+    font-size: 19px;
+    font-weight: bold;
+}
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    color: var(--muted);
+}
+.contact a {
+    color: inherit;
+    text-decoration: none;
+}
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 42px;
+}
+section {
+    margin-top: 28px;
+    animation: section-in 600ms ease-out both;
+}
+@supports (animation-timeline: view()) {
+    section {
+        animation: section-scroll-in linear both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 50%;
+    }
+}
+section:nth-child(2) { animation-delay: 100ms; }
+section:nth-child(3) { animation-delay: 200ms; }
+section:nth-child(4) { animation-delay: 300ms; }
+h2 {
+    margin: 0 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #dbe3ef;
+    color: #2563eb;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+h3 {
+    margin: 0;
+    font-size: 17px;
+}
+.item {
+    margin-bottom: 20px;
+}
+.meta {
+    color: var(--muted);
+    font-size: 14px;
+}
+ul {
+    margin: 8px 0 0;
+    padding-left: 20px;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.skill {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: #eaf1ff;
+    color: #1d4ed8;
+    font-size: 13px;
+    transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+.skill:hover {
+    transform: translateY(-4px) scale(1.04);
+    background: #dbeafe;
+    box-shadow: 0 6px 14px #2563eb33;
+}
+.contact a {
+    transition: color 180ms ease;
+}
+.contact a:hover {
+    color: #2563eb;
+}

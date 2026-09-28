@@ -1,0 +1,53 @@
+function formatNumber(type, number) {
+    if (isNaN(number)) {
+        return "OI BRUV THIS AIN'T A FOOKIN NUMBAH INNIT";
+    }
+    if (type == "currency") { 
+        return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(number);
+    } else if (type == "percentage") {
+        return new Intl.NumberFormat('en-US', { style: 'percent' }).format(number);
+    }
+}
+
+function random(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+l2();
+function l2() {
+    for (let i = 1; i < 25; i++) {
+        if (i % 3 == 0) {
+            console.log(i);
+        }
+    }
+
+    for (let i = 0; i <= 50; i++) { //instead of checking condition, you can increment by the multiple.
+        if (i % 5 == 0) {
+            console.log(i);
+        }
+    }
+
+    for (i = 1; i <= 50; i++) {
+        let a = i % 2 == 0;
+        let b = i % 3 == 0;
+        let c = (!a && !b);
+        if ((a && b) || c) {
+            console.log(i);
+        }
+    }
+
+    for (let i = 0; i < 100; i++) {
+        let a = i % 2 == 0;
+        let b = i % 3 == 0;
+        let c = !(i % 12 == 0);
+        
+    }
+
+
+
+
+}
+
+console.log(calcAverage(10, 11, 12, 13));
+function calcAverage(num1, num2, num3, num4) {
+    return (num1 + num2 + num3+ num4) / 4;
+}

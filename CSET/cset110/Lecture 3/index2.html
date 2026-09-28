@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>L2 Practice</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.menu{
+			height:100px;
+			background-color: #b2d6ff;
+		}
+		.sidebar{
+			height: 300px;
+			width: 200px;
+			background-color: #f09a9d;		
+			float:left;
+		}
+		.content{
+			float:left;
+			height: 500px;					
+			width: 650px;
+			background-color: #f5cf8e;
+		}
+		.footer{
+			clear: both;
+			background-color: hotpink;
+			overflow: hidden;
+		}
+		.page{
+			width: 900px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+		div.container{
+			background-color: #EAEDF0;            
+		}
+		.column{
+			float:left;
+			width: 31%;
+			height: 160px;
+			margin: 20px 1.15%;
+			background-color: yellow;
+		}
+		.column#bob {
+			border: 8px solid black;
+		}
+		.avatar{float: left; width: 100px; height: 100px; margin: 20px; background-color:#b2d6ff; border-radius: 100px; margin-top: 20px}
+		.username{margin-top: 15px; font-family: Calibri;}
+		.comment{font-family: Calibri; }
+	</style>
+</head>
+<body>
+	<div class="menu"><p>Menu</p></div>
+	<div class="container">
+		<div class="page">
+			<div class="sidebar">
+				
+			</div>
+			<div class="content"><p>Content</p></div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="column" id="bob">
+			<div class="avatar"></div>
+			<h3 class="username">Bob Smith</h3>
+			<p class="comment">haha hey guys i'm bob hahahah! I'm just a funny youtoober <br>
+							   who says silly things and sometimes farts hahahaha</p>
+		</div>
+		<div class="column"></div>
+		<div class="column"></div>
+		<div class="column"></div>
+		<div class="column"></div>
+		<div class="column"></div>
+	</div>
+</body>
+</html>

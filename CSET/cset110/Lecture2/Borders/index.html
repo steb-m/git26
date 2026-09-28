@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borders</title>
+</head>
+<style>
+    body{
+        background-color:aliceblue;
+        text-align: center;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size:28px
+    }
+    div{
+        max-width: 20%;
+        margin: auto;
+    }
+    #allSides{
+        border:5px solid green;
+        width:fit-content;
+
+    }
+    #redBottom{
+        border-bottom: 5px solid red;
+        width:fit-content;
+    }
+    #roundedCorners{
+        border:5px solid black;
+        border-radius: 10px;
+        width:fit-content;
+    }
+    #blueLeft {
+        border-left:5px solid blue;
+        width:fit-content;
+    }
+</style>
+<body>
+    <div>
+        <p id="allSides">I have borders on all sides</p>
+        <p id="redBottom">I have a red bottom border</p>
+        <p id="roundedCorners">I have rounded corners</p>
+        <p id="blueLeft">I have a blue left border</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+p {
+    border:10px solid ;
+    border-radius: 50px;
+    display:inline-block;
+    padding: 10px 15px;
+    background-color: black;
+    margin:auto;
+}
+body{
+    text-align: center;
+    
+}
+img{
+    margin-bottom: 200px;
+}

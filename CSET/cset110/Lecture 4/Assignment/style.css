@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkslategray;
+}
+
+.page {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+
+.header, .hero, .content, .footer {
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    width: 250px;
+    min-height: 100px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 3px solid #333;
+    background-color: #dfdfdf;
+}
+.header .box, .hero .box, .content .box, .footer .box {
+    width:100%;
+    justify-content:center;
+    background-color: aquamarine;
+}
+.hero .box{
+    width: calc(33.3% + 10px);
+    height: 2px;
+    background-color: red;
+}
+.footer .box {
+    background-color: #383838;
+}
+.header p, .hero p, .content__main p, .content__sidebar p, .footer p {
+    font-size: 28px;
+    font-family: Calibri, sans-serif;
+    text-align: center;
+}
+
+.header, .hero, .content, .footer{
+    flex-direction: row;
+    min-height: 100px;
+    justify-content: center;
+}
+.content__main, .content__sidebar {
+    width: 23.3%;
+    height: 600px;
+    padding: 20px;
+    margin: 5px;
+    border: 3px solid black;
+}
+.content__main{
+    background-color: chartreuse;
+}
+.content__sidebar {
+    width:10%;
+    background-color: purple;
+}
+/* if user is on mobile, apply these settings */
+@media (max-width: 1000px) {
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content__main,
+    .content__sidebar {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+}
